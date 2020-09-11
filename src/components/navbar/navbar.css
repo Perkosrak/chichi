@@ -10,3 +10,14 @@
     height: 36px;
     width: auto;
 }
+
+
+
+.navbar > ul > li > a:hover {
+    color:palegreen;
+}
+
+.navbar .active {
+    font-weight: 700;
+    color: red;
+}

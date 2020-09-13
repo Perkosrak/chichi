@@ -1,13 +1,12 @@
 import React from 'react';
-
+import Table from '../table/table';
 
 const Charges = () => {
     return(
         <>
-<div>перший таб</div>
-    <p>Test</p>
+        <h1>Charges</h1>
+        <Table/>
         </>
-
     )
 }
 

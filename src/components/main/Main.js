@@ -9,7 +9,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 
 const Main = () => {
     return(
-        <div>Main page
+        <div>Main page.
             <Balance value="2,652.07"/>
             <BrowserRouter>
         <div className="tab-items">

@@ -1,0 +1,15 @@
+.balance-container{
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    margin-left: 900px; /*переробити на норм версію*/
+}
+h3{
+    
+    color: rgba(163, 160, 160, 0.719);
+}
+.amount{
+    font-size: 1.5em;
+    font-weight: 600 ;
+    color: rgb(112, 110, 110);
+}

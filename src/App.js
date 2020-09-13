@@ -16,6 +16,7 @@ function App() {
         <Route path="/categories" component = {Categories}/>  
         <Route path="/charts" component = {Charts}/> 
       </div>
+      
     </BrowserRouter>
   );
 }

@@ -1,27 +1,61 @@
-import React from 'react';
+import React, { Component }  from 'react';
+import '../popup/popup.css';
 
-export const Form = () => {
-  return (
-    <form>
-      <div className="form-group">
-        <label htmlFor="name"> <input className="form-control" id="name" /></label>
-      </div>
-      <div className="form-group">
-        <label htmlFor="description"> <input className="form-control" id="description" /></label>
-      </div>
-      <div className="form-group">
-        <label htmlFor="data"> <input className="form-control" id="data" /></label>
-      </div>
-      <div className="form-group">
-        <label htmlFor="money"> <input className="form-control" id="money" /></label>
-      </div>
-     
+class Form extends Component  {
+    state = {
+        category: "",
+        description: "",
+        date: "",
+        income: null,
+        Charges: null
+    }
+    handleSubmit = (event) => {
+        event.preventDefault()
+        
+        const loc = JSON.parse(localStorage.getItem('data'));
+        const newArr = [...loc,this.state];
+        window.localStorage.setItem('data', JSON.stringify(newArr)
+        );
+        
+       
+      }
+      changeDate = (event) => {
+        this.setState( {
+                [event.target.name]: event.target.value
+            }  )
+      }
 
-      <button className="form-control btn btn-primary">
-          Add new
-        </button>
+    render(){
+        return (
+            <form className="form">
+                <div className="form_wrapper">
+                    <div className="form_input">
+                        {/* <label>Choose a category:</label> */}
+                        <select name="category" id="pet-select"  value={this.state.category} onChange = {this.changeDate}>
+                            <option value="">--Please choose an option--</option>
+                            <option value="dog">Dog</option>
+                            <option value="cat">Cat</option>
+                            <option value="hamster">Hamster</option>
+                            <option value="parrot">Parrot</option>
+                        </select>
+                    </div>
+
+                    <div className="form_input">
+                        <label>Description:<input type="text" name="description" placeholder="" value={this.state.description} onChange = {this.changeDate} /></label>
+                    </div>
+                    <div className="form_input">
+                        <label> Sum:  <input type="number" name="sum" placeholder="0" value={this.state.sum} onChange = {this.changeDate} /></label>
+                    </div>
+                    <div className="form_input">
+                        <label>Start date: <input type="date" id="date" name="date" placeholder="2018-07-22" value={this.state.date} onChange = {this.changeDate} ></input></label>
+                    </div>
+                    <button type="onSubmit" onClick={this.handleSubmit} className="form_addnew">Add</button>
+                </div>
+            </form>
+          );
+    }
+
     
-    </form>
-  );
-};
+  }
+
 export default Form;

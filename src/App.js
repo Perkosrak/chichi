@@ -12,9 +12,9 @@ function App() {
     <BrowserRouter>
       <div className="app_wrapper">
         <Navbar/>
-        <Route path="/main" component = {Main}/>
-        <Route path="/categories" component = {Categories}/>  
-        <Route path="/charts" component = {Charts}/> 
+        <Route exact path="/"  component = {Main}/>
+        <Route exact path="/categories" component = {Categories}/>  
+        <Route exact path="/charts" component = {Charts}/> 
       </div>
       
     </BrowserRouter>

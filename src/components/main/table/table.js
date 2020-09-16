@@ -2,34 +2,43 @@
 import React, { Component } from 'react';
 import TableHeader from './thead';
 import TableRow from './trow';
+import './table.css';
+
 
 const TableData = [
   {
-    category: "food",
-    description: "lemon",
-    date: "01-02-2020",
+    category: "Food",
+    description: "Dinner with John",
+    date: "05-08-2020",
+    income: 550,
+    Charges: 1200
+  },
+  {
+    category: "Clothes",
+    description: "red dress",
+    date: "20-08-2020",
     income: 1200,
     Charges: 1200
   },
   {
-    category: "food",
-    description: "lemon",
-    date: "01-02-2020",
-    income: 1200,
+    category: "Restaurants",
+    description: "pizza and cola in Mimosa",
+    date: "03-09-2020",
+    income: 630,
     Charges: 1200
   },
   {
-    category: "food",
-    description: "lemon",
-    date: "01-02-2020",
-    income: 1200,
+    category: "Utility bills",
+    description: "",
+    date: "09-09-2020",
+    income: 1300,
     Charges: 1200
   },
   {
-    category: "food",
-    description: "lemon",
-    date: "01-02-2020",
-    income: 1200,
+    category: "Pets",
+    description: "royal canin",
+    date: "10-09-2020",
+    income: 120,
     Charges: 1200
   }
 ]

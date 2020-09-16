@@ -54,14 +54,15 @@ class Main extends Component {
                 <Balance value={this.state.balance}/>
 
                 <BrowserRouter>
+                <Button/>
             <div className="tab-items">
             <Tabs/>
-            <Route path="/charges" component = {Charges}/>
-            <Route path="/incomes" component = {Incomes}/>  
+            <Route exact path="/" component = {Charges}/>
+            <Route  exact path="/incomes" component = {Incomes}/>  
             
           </div>
           <div>
-          <Button/>
+          
             <Route path="/button" component = {Button}/>
             </div>
         </BrowserRouter>

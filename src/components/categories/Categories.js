@@ -1,17 +1,26 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Button from '../main/button/Button';
+import Balance from '../main/balance/Balance';
+import Table from '../main/table/table';
 
 
-
-const Categories = () => {
-
+class Categories extends Component {
+    state = {
+        // balance: "0"
+        balance: [...JSON.parse(localStorage.getItem('data'))].reduce((sum,item) => item.income+sum,0)
+    }
+    render() {
     return(
         <div>
-            <h1>It's a Categories Page</h1>
-            <p>Categories of Cats and Dogs here!</p>
-        </div>
-    )
+               <Balance value={this.state.balance}/>
+               <Button/>
+               <h1>Categories</h1>
+                <Table/>
+         </div>
+    
+)
 }
-
+}
 
 
 

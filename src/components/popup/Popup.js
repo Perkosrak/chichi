@@ -1,16 +1,15 @@
 import React from 'react';
-import Form from 'form';
+import Form from '../form/Form';
+import './popup.css';
 
-const Popup = () => {
-
-       
+const Popup = (props) => {
 
     return (
-        <>
-        <button>Close</button>
-        <h2>Add new item here</h2>
-        <Form/>
-        </>
+        <div className="popup">
+            <button onClick = {props.closePopup} className="popup_close">Close</button>
+            <h2>Add new item here</h2>
+            <Form/>
+        </div>
     )
 }
 

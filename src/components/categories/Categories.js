@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Table from '../main/table/table';
 
 
 const Categories = () => {
@@ -7,7 +7,11 @@ const Categories = () => {
     return(
         <div>
             <h1>It's a Categories Page</h1>
-            <p>Categories of Cats and Dogs here!</p>
+            <Table  type="Charges"
+                    category = {'Category'}
+                    description = {'Description'}
+                    date = {'Date'}
+                    money = {'Action'}/>
         </div>
     )
 }

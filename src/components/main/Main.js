@@ -17,20 +17,17 @@ class Main extends Component {
         return (
             
             <div>
-                {/* Main page */}
                 <Balance value={this.state.balance}/>
 
                 <BrowserRouter>
             <div className="tab-items">
             <Tabs/>
-            <Route path="/charges" component = {Charges}/>
+            {/* <p>{this.props.globalProps}</p> */}
+            <Route path="/charges" render = {(props)=><Charges globalProps = {this.props.globalProps} />}/>
             <Route path="/incomes" component = {Incomes}/>  
             
           </div>
-          {/* <div>
-          <Button/>
-            <Route path="/button" component = {Button}/>
-            </div> */}
+
         </BrowserRouter>
          </div>
             

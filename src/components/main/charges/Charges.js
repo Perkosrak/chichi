@@ -21,7 +21,14 @@ class Charges extends Component {
         return(
             <>
             <h1>Charges</h1>
-            <Table/>
+            {/* <h1>{this.props.globalProps}</h1> */}
+            <Table  type="Charges"
+                    category = {'Category'}
+                    description = {'Description'}
+                    date = {'Date'}
+                    money = {'Money'}
+                    globalProps = {this.props.globalProps}/>
+                    
             <button onClick={this.showPopup}>Add New</button>
 
             {this.state.isPopup ? (<Popup closePopup={this.closePopup}/>) : null }

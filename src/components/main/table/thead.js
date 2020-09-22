@@ -1,14 +1,14 @@
 import React from 'react';
 
 
-function TableHeader({type}) {
+function TableHeader({category,description,date,money =""}) {
     return (
         <thead>
             <tr>
-            <th>Category</th>
-            <th>Description</th>
-            <th>Date</th>
-            <th>{type}</th>
+            <th>{category}</th>
+            <th>{description}</th>
+            <th>{date}</th>
+            <th>{money}</th>
             </tr>
       </thead>
     );

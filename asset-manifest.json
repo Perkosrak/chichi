@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/chichi/static/css/main.13b2a0d8.chunk.css",
-    "main.js": "/chichi/static/js/main.9ee1bcaf.chunk.js",
-    "main.js.map": "/chichi/static/js/main.9ee1bcaf.chunk.js.map",
+    "main.css": "/chichi/static/css/main.488af6b2.chunk.css",
+    "main.js": "/chichi/static/js/main.f0f005e4.chunk.js",
+    "main.js.map": "/chichi/static/js/main.f0f005e4.chunk.js.map",
     "runtime-main.js": "/chichi/static/js/runtime-main.a49852f2.js",
     "runtime-main.js.map": "/chichi/static/js/runtime-main.a49852f2.js.map",
     "static/js/2.0eb7db40.chunk.js": "/chichi/static/js/2.0eb7db40.chunk.js",
     "static/js/2.0eb7db40.chunk.js.map": "/chichi/static/js/2.0eb7db40.chunk.js.map",
     "index.html": "/chichi/index.html",
-    "precache-manifest.db8ee078cd9b732edcaf074a4e49547c.js": "/chichi/precache-manifest.db8ee078cd9b732edcaf074a4e49547c.js",
+    "precache-manifest.f2cb8a2e88475063b86f26bbb3c92d69.js": "/chichi/precache-manifest.f2cb8a2e88475063b86f26bbb3c92d69.js",
     "service-worker.js": "/chichi/service-worker.js",
-    "static/css/main.13b2a0d8.chunk.css.map": "/chichi/static/css/main.13b2a0d8.chunk.css.map",
+    "static/css/main.488af6b2.chunk.css.map": "/chichi/static/css/main.488af6b2.chunk.css.map",
     "static/js/2.0eb7db40.chunk.js.LICENSE.txt": "/chichi/static/js/2.0eb7db40.chunk.js.LICENSE.txt",
     "static/media/chichi.jpg": "/chichi/static/media/chichi.4219124a.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.a49852f2.js",
     "static/js/2.0eb7db40.chunk.js",
-    "static/css/main.13b2a0d8.chunk.css",
-    "static/js/main.9ee1bcaf.chunk.js"
+    "static/css/main.488af6b2.chunk.css",
+    "static/js/main.f0f005e4.chunk.js"
   ]
 }

@@ -1,4 +1,5 @@
 import React from 'react';
+import  './thead.css';
 
 
 function TableHeader({category,description,date,money =""}) {

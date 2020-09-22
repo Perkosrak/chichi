@@ -20,13 +20,16 @@ class Main extends Component {
                 <Balance value={this.state.balance}/>
 
                 <BrowserRouter>
+             {/*   <Button/>*/}
             <div className="tab-items">
             <Tabs/>
+
             {/* <p>{this.props.globalProps}</p> */}
             <Route path="/charges" render = {(props)=><Charges globalProps = {this.props.globalProps} />}/>
             <Route path="/incomes" component = {Incomes}/>  
             
           </div>
+
 
         </BrowserRouter>
          </div>

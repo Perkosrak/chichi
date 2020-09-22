@@ -7,21 +7,6 @@ import './app.css';
 import { BrowserRouter, Route } from 'react-router-dom';
 
 
-// function App() {
-//   return (
-//     <BrowserRouter>
-//       <div className="app_wrapper">
-//         <Navbar/>
-//         <Route path="/main" component = {Main}/>
-//         <Route path="/categories" component = {Categories}/>  
-//         <Route path="/charts" component = {Charts}/> 
-//       </div>
-      
-//     </BrowserRouter>
-//   );
-// }
-
-// export default App;
 
 const TableData = [
   {
@@ -76,16 +61,14 @@ addNew = (e) => {
 
   render() {
     return (
-        <BrowserRouter>
-          <div className="app_wrapper">
-            <Navbar/>
-            {/* <Route path="/main" component = {Main}/> */}
-            <Route path="/main" render = {(props)=><Main globalProps = {this.state.data} />}/>
-            <Route path="/categories" component = {Categories}/>  
-            <Route path="/charts" component = {Charts}/> 
-          </div>
-          
-        </BrowserRouter>
+      <BrowserRouter>
+      <div className="app_wrapper">
+        <Navbar/>
+        <Route path="/main" render = {(props)=><Main globalProps = {this.state.data} />}/>
+        <Route exact path="/categories" component = {Categories}/>  
+        <Route exact path="/charts" component = {Charts}/> 
+      </div>
+     </BrowserRouter>
     );
   }
   }

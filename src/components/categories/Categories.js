@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Table from '../main/table/table';
 
 
@@ -15,9 +15,5 @@ const Categories = () => {
         </div>
     )
 }
-
-
-
-
 
 export default Categories;

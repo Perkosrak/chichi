@@ -2,6 +2,9 @@
 import React, { Component } from 'react';
 import TableHeader from './thead';
 import TableRow from './trow';
+import './table.css';
+
+
 
 // const TableData = [
 //   {
@@ -33,6 +36,7 @@ import TableRow from './trow';
 //     Charges: 1200
 //   }
 // ]
+
 
 
 // window.localStorage.setItem('data', JSON.stringify(TableData));
